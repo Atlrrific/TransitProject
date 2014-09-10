@@ -9,9 +9,13 @@
 
     <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
     <script src="js/maps.js"></script>
+    <script src="js/jquery-1.11.1.min.js"></script>
+  
+
+    <script language="JavaScript" type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
   </head>
   <body>
-    <div id="panel">
+   <!--  <div id="panel">
     <b>Start: </b>
     <select id="start" onchange="calcRoute();">
       <option value="chicago, il">Chicago</option>
@@ -42,15 +46,20 @@
       <option value="san bernardino, ca">San Bernardino</option>
       <option value="los angeles, ca">Los Angeles</option>
     </select>
-    </div>
+    </div> -->
     
 
     <div id="panel2">
       <form>
-Start: <input type="text" name="Start"><br>
-End: <input type="text" name="End">
-</form>
+      Start: <input type="text" name="Start" id= "start2"><br>
+      End: <input type="text" name="End" id="end2">
+
     <button type="button">Click Me!</button>
+
+    <div id="button">
+    <button onMouseDown="calcRoute()" >Get Directions</button>
+    </div>
+
     </div>
 
     <div id="map-canvas"></div>
