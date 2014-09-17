@@ -19,6 +19,19 @@
 
     <link href="css/logo-nav.css" rel="stylesheet">
 
+    <script src="js/jquery-1.11.1.min.js"></script>
+
+     <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+
+
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <script src="js/maps.js"></script>
+
+    <link href="css/maps.css" rel="stylesheet">
+
 
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -73,53 +86,26 @@
         </div>
     </div>
 
-    <div id="map-canvas"></div>
-    <div id="panel">
-    <b>Start: </b>
-    <select id="start" onchange="calcRoute();">
-      <option value="chicago, il">Chicago</option>
-      <option value="st louis, mo">St Louis</option>
-      <option value="joplin, mo">Joplin, MO</option>
-      <option value="oklahoma city, ok">Oklahoma City</option>
-      <option value="amarillo, tx">Amarillo</option>
-      <option value="gallup, nm">Gallup, NM</option>
-      <option value="flagstaff, az">Flagstaff, AZ</option>
-      <option value="winona, az">Winona</option>
-      <option value="kingman, az">Kingman</option>
-      <option value="barstow, ca">Barstow</option>
-      <option value="san bernardino, ca">San Bernardino</option>
-      <option value="los angeles, ca">Los Angeles</option>
-    </select>
-    <b>End: </b>
-    <select id="end" onchange="calcRoute();">
-      <option value="chicago, il">Chicago</option>
-      <option value="st louis, mo">St Louis</option>
-      <option value="joplin, mo">Joplin, MO</option>
-      <option value="oklahoma city, ok">Oklahoma City</option>
-      <option value="amarillo, tx">Amarillo</option>
-      <option value="gallup, nm">Gallup, NM</option>
-      <option value="flagstaff, az">Flagstaff, AZ</option>
-      <option value="winona, az">Winona</option>
-      <option value="kingman, az">Kingman</option>
-      <option value="barstow, ca">Barstow</option>
-      <option value="san bernardino, ca">San Bernardino</option>
-      <option value="los angeles, ca">Los Angeles</option>
-    </select>
+    <div id="panel2">
+      <form>
+      Start: <input type="text" name="Start" id= "start2"><br>
+      End: <input type="text" name="End" id="end2">
+
+    <button type="button">Click Me!</button>
+
+    <div id="button">
+    <button onMouseDown="calcRoute()" >Get Directions</button>
     </div>
+
+    </div>
+
+    <div id="directions-panel"></div>
     
+    <div id="map-canvas"></div>
     <!-- /.container -->
 
     <!-- jQuery Version 1.11.0 -->
-    <script src="js/jquery-1.11.1.min.js"></script>
-
-     <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
-
-
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
-
-    <script src="js/maps.js"></script>
+    
 
 </body>
 
